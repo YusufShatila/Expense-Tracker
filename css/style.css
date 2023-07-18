@@ -1,0 +1,76 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-color: #28eea7;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 200px;
+  padding: 20px;
+  background-color: #f1f2f3;
+  border-radius: 5px;
+  color: rgba(35, 35, 35, .90);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  flex: 1 0 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+button {
+  flex: 1 0 100%;
+  padding: 10px;
+  background-color: #28eea7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; 
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 5px solid #28eea7;
+  
+}
+
+
+
+tfoot td {
+  text-align: right;
+  font-weight: bold;
+}
+
+#delete-icon{
+  display: flex;
+  justify-content: center;
+}

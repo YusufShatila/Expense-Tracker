@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <form id="expense-form">
+        <label for="expense-name">Expense Name:</label>
+        <input
+          type="text"
+          id="expense-name"
+          placeholder="Expense Name"
+          required
+        />
+
+        <label for="expense-amount">Amount:</label>
+        <input type="number" id="expense-amount" placeholder="0" required />
+
+        <button id="add-button" type="submit">Add</button>
+      </form>
+
+      <table id="expense-table">
+        <thead>
+          <tr>
+            <th>Expense Name</th>
+            <th>Amount</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="todo-list"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total:</td>
+            <td id="total-expenses">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
