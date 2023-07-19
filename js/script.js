@@ -1,4 +1,4 @@
-function addName() {
+function add_expense() {
     const name = $('#expense-name').val();
     const amount = $('#expense-amount').val();
     if (name.trim() === "" || amount.trim() === "") return;
@@ -20,4 +20,13 @@ function addName() {
     }); 
   
   }
-  
+
+  $(document).ready(function () {
+    const addButton = $("#add-button"); 
+    addButton.click(add_expense); 
+    $("#todo-input").keyup(function (event) {
+      if (event.keyCode === 13) {
+  addTodoItem();
+}
+    });
+  });

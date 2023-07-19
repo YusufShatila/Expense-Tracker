@@ -1,11 +1,10 @@
-
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.5;display: flex; 
-  justify-content: center; 
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #28eea7;
-
 }
 
 .container {
@@ -16,7 +15,7 @@ body {
   padding: 20px;
   background-color: #f1f2f3;
   border-radius: 5px;
-  color: rgba(35, 35, 35, .90);
+  color: rgba(35, 35, 35, 0.9);
 }
 
 h1 {
@@ -53,24 +52,22 @@ button {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
   border: 5px solid #28eea7;
-  
 }
-
-
 
 tfoot td {
   text-align: right;
   font-weight: bold;
 }
 
-#delete-icon{
+#delete-icon {
   display: flex;
   justify-content: center;
 }
