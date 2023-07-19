@@ -3,10 +3,10 @@ function add_expense() {
     const amount = $('#expense-amount').val();
     if (name.trim() === "" || amount.trim() === "") return;
     
-    const newRow = $("<tr>");
+    const newRow = $("<tr>"); 
     const newName = $("<td>").text(name);
     const newAmount = $("<td>").text(amount);
-    const newDelete = $("<td>").html('<i class="fas fa-trash-alt delete-icon"></i>');
+    const newDelete = $("<td>").html('<i id = "delete-icon" class="fas fa-trash-alt delete-icon"></i>');
     
     newRow.append(newName);
     newRow.append(newAmount);
