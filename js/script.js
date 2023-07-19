@@ -1,3 +1,14 @@
+
+function calculateTotal(){
+    let total = 0; 
+    $(".amount").each(function() {
+      total += parseFloat($(this).text());
+    });
+    $("#total-expenses").text(total);
+}
+    
+  
+
 function add_expense() {
     const name = $('#expense-name').val();
     const amount = $('#expense-amount').val();
@@ -5,7 +16,7 @@ function add_expense() {
     
     const newRow = $("<tr>"); 
     const newName = $("<td>").text(name);
-    const newAmount = $("<td>").text(amount);
+    const newAmount = $("<td>").addClass("amount").text(parseFloat(amount));
     const newDelete = $("<td>").html('<i id = "delete-icon" class="fas fa-trash-alt delete-icon"></i>');
     
     newRow.append(newName);
@@ -17,9 +28,12 @@ function add_expense() {
   
     newDelete.find('.delete-icon').click(function() {
       newRow.remove();
+      calculateTotal();
     }); 
+    calculateTotal();
   
   }
+
 
   $(document).ready(function () {
     const addButton = $("#add-button"); 
